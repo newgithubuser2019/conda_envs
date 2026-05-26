@@ -1,0 +1,100 @@
+name: python_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+  #- pip
+  #- pip:
+      #- streamlit
+      #- connectorx
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+  # ------------------------------------------------------------------DATA MANIPULATION
+  #- numpy # adding support for large, multi-dimensional arrays and matrices
+  - pandas # data analysis and manipulation tool, built on top of the Python programming language
+  #- sidetable # combination of pandas value_counts plus crosstab that builds summary tables of your pandas DataFrame
+  - polars # blazingly fast DataFrame library completely written in Rust
+  #- xarray # makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun
+  #
+  # ------------------------------------------------------------------STATISTICAL MODELING
+  - patsy # for describing statistical models and building design matrices
+  - statsmodels #  provides classes and functions for the estimation of many different statistical models
+  #- pymc3 # for Bayesian statistical modeling and probabilistic machine learning
+  #- scipy # for scientific computing and technical computing
+  - scikit-learn # tools for predictive data analysis
+  #
+  # ------------------------------------------------------------------DEEP LEARNING
+  #- jax # Composable transformations of Python+NumPy programs
+  #- tensorflow # An Open Source Machine Learning Framework for Everyone
+  #- pytorch # Tensors and Dynamic neural networks in Python with strong GPU acceleration
+  #- keras # Keras 3 is a full rewrite of Keras that enables you to run your Keras workflows on top of either JAX, TensorFlow, or PyTorch
+  #
+  # ------------------------------------------------------------------LLMs
+  #- langchain # a framework for developing applications powered by language models
+  #- semantic-kernel # an SDK that integrates LLMs with conventional programming languages
+  #- superduperdb # a framework for integrating AI directly with your existing databases
+  #
+  # ------------------------------------------------------------------ML- and LLM-related
+  #- transformers # pretrained models to perform tasks on different modalities (for Pytorch, TensorFlow, and JAX)
+  #- datasets # ready-to-use datasets for ML models
+  #
+  # ------------------------------------------------------------------PLOTTING
+  - hvplot # high-level API for visualization, supports the plotting backends Bokeh, Matplotlib and Plotly
+  #
+  - holoviews # designed to make data analysis and visualization seamless and simple
+  #- datashader # quickly and accurately render even the largest data
+  #
+  #- matplotlib # for creating static, animated, and interactive visualizations
+  #- seaborn # based on matplotlib, provides a high-level interface for drawing statistical graphics
+  - altair # a declarative visualization library
+  - bokeh # an interactive visualization library for modern web browsers
+  - plotly # an interactive, declarative, browser-based graphing library
+  #
+  #- colorcet # collection of perceptually uniform colormaps for bokeh, matplotlib, holoviews, and datashader
+  - python-kaleido # cross-platform library for generating static images
+  #
+  # ------------------------------------------------------------------DASHBOARDS
+  - dash # framework for building ML & data science web apps
+  #- dash-bootstrap-components # makes it easier to build consistently styled Dash apps
+  - panel # data exploration & web app framework
+  - streamlit # lets you turn data scripts into shareable web apps in minutes
+  #
+  # ------------------------------------------------------------------EXCEL ENGINES
+  - openpyxl > 3.1.1 # library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files
+  - xlsxwriter # for writing files in the Excel 2007+ XLSX file format
+  #- xlwings # makes it easy to call Python from Excel and vice versa
+  #
+  # ------------------------------------------------------------------SQL
+  - connectorx # load data from databases into Python
+  - pymysql # MySQL client library
+  - psycopg2 # PostgreSQL database adapter
+  #
+  # ------------------------------------------------------------------WEB SCRAPING
+  #- requests # allows to send HTTP/1.1 requests
+  - httpx # A next-generation HTTP client for Python (supposed to be better than requests?)
+  #- requests-html # intends to make parsing HTML as simple and intuitive as possible (hasn't been updated in a log time)
+  - beautifulsoup4 # for pulling data out of HTML and XML files
+  #- scrapy # fast high-level web crawling and web scraping framework
+  #- selenium # provides a simple API to write functional/acceptance tests using Selenium WebDriver
+  #
+  # ------------------------------------------------------------------LINTERS
+  #- flake8 # check the style and quality of python code
+  #- pylint # static code analyser
+  #- ruff # an extremely fast Python linter, written in Rust (it can also organize imports, so no need for isort?)
+  #
+  # ------------------------------------------------------------------OTHER
+  - ipython # a command shell for interactive computing
+  # - isort # library to sort imports alphabetically and automatically separate into sections
+  #- pdfplumber # plumb a PDF for detailed information about each text character, rectangle, and line
+  #- pypdf2 # capable of splitting, merging, cropping, and transforming the pages of PDF files
+  #- pdfminer.six # for extracting information from PDF documents
+  - pyarrow # Arrow integration and interoperability with NumPy, pandas, and built-in Python objects
+  #- pyperclip # copy and paste clipboard functions
+  - rich # for rich text and beautiful formatting in the terminal
+  #- rich-cli # Rich-cli is a command line toolbox for fancy output in the terminal 
+  #- safety # checks commits and pull requests for dependencies with known security vulnerabilities
+  #- textual # Rapid Application Development framework for Python
+  #- pendulum # Drop-in replacement for the standard datetime class
+  #- tqdm # A Fast, Extensible Progress Bar for Python and CLI
+  

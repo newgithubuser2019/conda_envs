@@ -1,0 +1,71 @@
+name: r_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base
+  #- r-essentials
+#---------------------------------------------------------------------------------------------------------------------------------------------
+  - r-languageserver # an implementation of the Language Server Protocol for R
+  #-------------------------------------------------------------------IMPORT
+  - r-readr # for reading flat files
+  - r-readxl # for .xls and .xlsx sheets
+  #- r-DBI # for relational databases
+  #- r-haven # for SPSS, Stata, and SAS data
+  #- r-httr # for web APIs
+  #- r-googlesheets4 # for Google Sheets via the Sheets API v4
+  #- r-googledrive # for Google Drive files
+  #- r-vest # for web scraping
+  #- r-jsonlite # for JSON
+  #- r-xml2 # for XML
+  #
+  #-------------------------------------------------------------------WRANGLE
+  - r-dplyr #  tool for working with data frame like objects, both in memory and out of memory
+  #- r-dbplyr # use remote database tables by converting dplyr code into SQL
+  #- r-dtplyr # provides a data.table backend by automatically translating to the equivalent, but usually much faster, data.table code
+  - r-tidyr #  contains tools for changing the shape (pivoting) and hierarchy (nesting and 'unnesting') of a dataset
+  - r-tibble # a modern reimagining of the data.frame
+  #- r-stringr # designed to make working with strings as easy as possible
+  #- r-forcats # solve common problems with factors
+  - r-lubridate # for dates and date-times
+  - r-hms # for time-of-day values
+  #- r-blob # for storing blob (binary) data
+  #
+  #-------------------------------------------------------------------PROGRAM
+  #- r-purr # provides very consistent and natural methods for iterating on R objects
+  - r-magrittr # provides the pipe
+  #- r-glue # provides an alternative to paste() that makes it easier to combine data and strings
+  #
+  #-------------------------------------------------------------------PLOTTING
+  - r-ggplot2 # a system for declaratively creating graphics, based on The Grammar of Graphics
+  - r-leaflet # create and customize interactive maps
+  #- r-shiny # provides an elegant and powerful web framework for building web applications using R
+  #
+  #-------------------------------------------------------------------REPORTS
+  #- r-markdown # turn your analyses into high quality documents, reports, presentations and dashboards with R
+  #- r-knitr # an engine for dynamic report generation with R
+  #
+  #-------------------------------------------------------------------MODEL
+  #- r-rsample # provides infrastructure for efficient data splitting and resampling
+  #- r-parsnip # interface to try a range of models without getting bogged down in the syntactical minutiae of the underlying packages
+  #- r-plsmod # parsnip addon, which enables linear projection models
+  #- r-rules # parsnip addon, which enables rule-based classification and regression models
+  #- r-baguette # parsnip addon, which creates ensemble models via bagging
+  #- r-multilevelmod # parsnip addon, which provides support for multilevel models (mixed models or hierarchical models)
+  #- r-recipes # a tidy interface to data pre-processing tools for feature engineering
+  #- r-workflows # bundle your pre-processing, modeling, and post-processing together
+  #- r-tune # helps you optimize the hyperparameters of your model and pre-processing
+  #- r-finetune # extends the tune package with more approaches such as racing and simulated annealing
+  #- r-yardstick # measures the effectiveness of models using performance metrics
+  #- r-broom # converts the information in common statistical R objects into user-friendly, predictable formats
+  #- r-dials # creates and manages tuning parameters and parameter grids
+  #- r-infer # a high-level API for tidyverse-friendly statistical inference
+  #- r-corrr # tidy interfaces for working with correlation matrices
+  #- r-spatialsample # provides resampling functions and classes like rsample, but specialized for spatial data
+  #- r-workflowsets # lets you create sets of workflow objects for tuning and resampling
+  #- r-stacks # provides tools for stacked ensemble modeling
+  #- r-usemodels # creates templates and automatically generates code to fit and tune models
+  #- r-probably # tools for post-processing class probability estimates
+  #- r-tidyposterior # enables users to make formal statistical comparisons between models using resampling and Bayesian methods
+  #- r-applicable # to know whether the data that you are predicting are extrapolations from the training set
+  #- r-shinymodels # lets you explore tuning or resampling results via a Shiny app
