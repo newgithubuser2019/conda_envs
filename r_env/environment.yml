@@ -1,16 +1,17 @@
 name: r_env
 channels:
   - conda-forge
-  - defaults
+  #- defaults
 dependencies:
-  - r-base
+  #- r-base
   #- r-essentials
 #---------------------------------------------------------------------------------------------------------------------------------------------
   - r-languageserver # an implementation of the Language Server Protocol for R
   #-------------------------------------------------------------------IMPORT
   - r-readr # for reading flat files
   - r-readxl # for .xls and .xlsx sheets
-  #- r-DBI # for relational databases
+  - r-DBI # for relational databases; need to pair DBI with a database specific backends like RSQLite, RMariaDB, RPostgres, or odbc
+  - r-odbc
   #- r-haven # for SPSS, Stata, and SAS data
   #- r-httr # for web APIs
   #- r-googlesheets4 # for Google Sheets via the Sheets API v4
@@ -25,25 +26,25 @@ dependencies:
   #- r-dtplyr # provides a data.table backend by automatically translating to the equivalent, but usually much faster, data.table code
   - r-tidyr #  contains tools for changing the shape (pivoting) and hierarchy (nesting and 'unnesting') of a dataset
   - r-tibble # a modern reimagining of the data.frame
-  #- r-stringr # designed to make working with strings as easy as possible
-  #- r-forcats # solve common problems with factors
+  - r-stringr # designed to make working with strings as easy as possible
+  - r-forcats # solve common problems with factors
   - r-lubridate # for dates and date-times
   - r-hms # for time-of-day values
   #- r-blob # for storing blob (binary) data
   #
   #-------------------------------------------------------------------PROGRAM
-  #- r-purr # provides very consistent and natural methods for iterating on R objects
+  - r-purr # provides very consistent and natural methods for iterating on R objects
   - r-magrittr # provides the pipe
   #- r-glue # provides an alternative to paste() that makes it easier to combine data and strings
   #
   #-------------------------------------------------------------------PLOTTING
   - r-ggplot2 # a system for declaratively creating graphics, based on The Grammar of Graphics
-  - r-leaflet # create and customize interactive maps
-  #- r-shiny # provides an elegant and powerful web framework for building web applications using R
+  #- r-leaflet # create and customize interactive maps
+  - r-shiny # provides an elegant and powerful web framework for building web applications using R
   #
   #-------------------------------------------------------------------REPORTS
-  #- r-markdown # turn your analyses into high quality documents, reports, presentations and dashboards with R
-  #- r-knitr # an engine for dynamic report generation with R
+  - r-markdown # turn your analyses into high quality documents, reports, presentations and dashboards with R
+  - r-knitr # an engine for dynamic report generation with R
   #
   #-------------------------------------------------------------------MODEL
   #- r-rsample # provides infrastructure for efficient data splitting and resampling
