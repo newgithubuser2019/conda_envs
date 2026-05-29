@@ -5,9 +5,12 @@ channels:
 dependencies:
   - python
 # ---------------------------------------------------------------------------------------------------------------------------------------------
+# it will fail if behind company firewall, should install manually and use proxy
+# conda activate python_env
+# pip install --proxy http:[username:password]@proxy_ip_address:port <package_name>
   - pip
   - pip:
-      - df2tables # Pandas or Polars DataFrames to Interactive DataTables 
+      - df2tables # Pandas or Polars DataFrames to Interactive DataTables
 # ---------------------------------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------DATA MANIPULATION
   - pandas # data analysis and manipulation tool, built on top of the Python programming language
