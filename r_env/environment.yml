@@ -3,9 +3,6 @@ channels:
   - conda-forge
   #- defaults
 dependencies:
-  #- r-base
-  #- r-essentials
-#---------------------------------------------------------------------------------------------------------------------------------------------
   - r-languageserver # an implementation of the Language Server Protocol for R
   #-------------------------------------------------------------------IMPORT
   - r-readr # for reading flat files
@@ -24,6 +21,7 @@ dependencies:
   - r-dplyr #  tool for working with data frame like objects, both in memory and out of memory
   #- r-dbplyr # use remote database tables by converting dplyr code into SQL
   #- r-dtplyr # provides a data.table backend by automatically translating to the equivalent, but usually much faster, data.table code
+  #- r-duckplyr # runs existing dplyr code using DuckDB where possible, allowing for fast analysis of larger-than-memory datasets
   - r-tidyr #  contains tools for changing the shape (pivoting) and hierarchy (nesting and 'unnesting') of a dataset
   - r-tibble # a modern reimagining of the data.frame
   - r-stringr # designed to make working with strings as easy as possible
@@ -48,15 +46,26 @@ dependencies:
   #
   #-------------------------------------------------------------------MODEL
   #- r-rsample # provides infrastructure for efficient data splitting and resampling
+  #---
   #- r-parsnip # interface to try a range of models without getting bogged down in the syntactical minutiae of the underlying packages
+  #- r-discrim # parsnip addon, contains definitions for discriminant analysis models
+  #- r-poissonreg # parsnip addon, provides definitions for Poisson regression models
   #- r-plsmod # parsnip addon, which enables linear projection models
   #- r-rules # parsnip addon, which enables rule-based classification and regression models
   #- r-baguette # parsnip addon, which creates ensemble models via bagging
+  #- r-bonsai # parsnip addon, provides additional tree-based model engines such as LightGBM and partykit
   #- r-multilevelmod # parsnip addon, which provides support for multilevel models (mixed models or hierarchical models)
+  #---
   #- r-recipes # a tidy interface to data pre-processing tools for feature engineering
+  #- r-embed # contains steps to create embeddings or projections of predictors
+  #- r-textrecipes # has extra steps for text processing
+  #- r-themis # can help alleviate class imbalance using sampling methods
+  #---
   #- r-workflows # bundle your pre-processing, modeling, and post-processing together
+  #---
   #- r-tune # helps you optimize the hyperparameters of your model and pre-processing
   #- r-finetune # extends the tune package with more approaches such as racing and simulated annealing
+  #---
   #- r-yardstick # measures the effectiveness of models using performance metrics
   #- r-broom # converts the information in common statistical R objects into user-friendly, predictable formats
   #- r-dials # creates and manages tuning parameters and parameter grids
