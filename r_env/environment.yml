@@ -31,7 +31,7 @@ dependencies:
   #- r-blob # for storing blob (binary) data
   #
   #-------------------------------------------------------------------PROGRAM
-  - r-purr # provides very consistent and natural methods for iterating on R objects
+  - r-purrr # provides very consistent and natural methods for iterating on R objects
   - r-magrittr # provides the pipe
   #- r-glue # provides an alternative to paste() that makes it easier to combine data and strings
   #

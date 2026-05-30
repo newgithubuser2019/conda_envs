@@ -81,14 +81,8 @@ dependencies:
   #- scrapy # fast high-level web crawling and web scraping framework
   #- selenium # provides a simple API to write functional/acceptance tests using Selenium WebDriver
   #
-  # ------------------------------------------------------------------LINTERS
-  #- flake8 # check the style and quality of python code
-  #- pylint # static code analyser
-  #- ruff # an extremely fast Python linter, written in Rust (it can also organize imports, so no need for isort?)
-  #
   # ------------------------------------------------------------------OTHER
   - ipython # a command shell for interactive computing
-  #- isort # library to sort imports alphabetically and automatically separate into sections
   #- pdfplumber # plumb a PDF for detailed information about each text character, rectangle, and line
   #- pendulum # Drop-in replacement for the standard datetime class
   - pyarrow # Arrow integration and interoperability with NumPy, pandas, and built-in Python objects
