@@ -12,58 +12,16 @@ dependencies:
   - pip:
       - df2tables # Pandas or Polars DataFrames to Interactive DataTables
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-  # ------------------------------------------------------------------DATA MANIPULATION
-  - pandas # data analysis and manipulation tool, built on top of the Python programming language
-  - polars # blazingly fast DataFrame library completely written in Rust
-  #- numpy # adding support for large, multi-dimensional arrays and matrices
-  #- xarray # makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun
-  #
-  # ------------------------------------------------------------------DATA MANIPULATION
+  # ------------------------------------------------------------------NOTEBOOKS
   #- jupyterlab # web-based interactive development environment for notebooks, code, and data
   #- marimo # AI-native reactive notebook, stored as Git-friendly reproducible Python
   #
-  # ------------------------------------------------------------------STATISTICAL MODELING
-  #- patsy # for describing statistical models and building design matrices
-  #- statsmodels #  provides classes and functions for the estimation of many different statistical models
-  #- pymc3 # for Bayesian statistical modeling and probabilistic machine learning
-  #- scipy # for scientific computing and technical computing
-  #- scikit-learn # tools for predictive data analysis
-  #
-  # ------------------------------------------------------------------DEEP LEARNING
-  #- jax # Composable transformations of Python+NumPy programs
-  #- tensorflow # An Open Source Machine Learning Framework for Everyone
-  #- pytorch # Tensors and Dynamic neural networks in Python with strong GPU acceleration
-  #- keras # Keras 3 is a full rewrite of Keras that enables you to run your Keras workflows on top of either JAX, TensorFlow, or PyTorch
-  #
-  # ------------------------------------------------------------------LLMs
-  #- langchain # a framework for developing applications powered by language models
-  #- agent-framework # a framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.
-  #
-  # ------------------------------------------------------------------ML- and LLM-related
-  #- transformers # pretrained models to perform tasks on different modalities (for Pytorch, TensorFlow, and JAX)
-  #- datasets # ready-to-use datasets for ML models
-  #
-  # ------------------------------------------------------------------PLOTTING
-  - hvplot # high-level API for visualization, supports the plotting backends Bokeh, Matplotlib and Plotly
-  #
-  - holoviews # designed to make data analysis and visualization seamless and simple
-  #- datashader # quickly and accurately render even the largest data
-  #
-  #- matplotlib # for creating static, animated, and interactive visualizations
-  #- seaborn # based on matplotlib, provides a high-level interface for drawing statistical graphics
-  - altair # a declarative visualization library
-  - bokeh # an interactive visualization library for modern web browsers
-  - plotly # an interactive, declarative, browser-based graphing library
-  #
-  #- colorcet # collection of perceptually uniform colormaps for bokeh, matplotlib, holoviews, and datashader
-  - python-kaleido # cross-platform library for generating static images
-  #
-  # ------------------------------------------------------------------DASHBOARDS
-  - dash # framework for building ML & data science web apps
-  #- dash-bootstrap-components # makes it easier to build consistently styled Dash apps
-  - panel # data exploration & web app framework
-  - streamlit # lets you turn data scripts into shareable web apps in minutes
+  # ------------------------------------------------------------------DATA MANIPULATION
+  - pandas # data analysis and manipulation tool, built on top of the Python programming language
+  - polars # blazingly fast DataFrame library completely written in Rust
   #- itables # changes how Pandas and Polars DataFrames are rendered in Python notebooks and applications
+  #- numpy # adding support for large, multi-dimensional arrays and matrices
+  #- xarray # makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun
   #
   # ------------------------------------------------------------------EXCEL ENGINES
   - openpyxl > 3.1.1 # library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files
@@ -80,6 +38,50 @@ dependencies:
   #- beautifulsoup4 # for pulling data out of HTML and XML files
   #- scrapy # fast high-level web crawling and web scraping framework
   #- selenium # provides a simple API to write functional/acceptance tests using Selenium WebDriver
+  #
+  # ------------------------------------------------------------------PLOTTING
+  #- matplotlib # for creating static, animated, and interactive visualizations
+  #- seaborn # based on matplotlib, provides a high-level interface for drawing statistical graphics
+  #
+  - holoviews # designed to make data analysis and visualization seamless and simple
+  #- hvplot # high-level API for visualization, supports the plotting backends Bokeh, Matplotlib and Plotly
+  #- datashader # quickly and accurately render even the largest data
+  #- geoviews # simple, concise geographical visualization in Python
+  #- colorcet # collection of perceptually uniform colormaps for bokeh, matplotlib, holoviews, and datashader
+  #
+  - altair # a declarative visualization library
+  - bokeh # an interactive visualization library for modern web browsers
+  #
+  - plotly # an interactive, declarative, browser-based graphing library
+  - python-kaleido # cross-platform library for generating static images
+  #
+  # ------------------------------------------------------------------DASHBOARDS
+  - dash # framework for building ML & data science web apps
+  #- dash-bootstrap-components # makes it easier to build consistently styled Dash apps
+  #
+  - panel # data exploration & web app framework
+  - streamlit # lets you turn data scripts into shareable web apps in minutes
+  #
+  # ------------------------------------------------------------------STATISTICAL MODELING
+  #- patsy # for describing statistical models and building design matrices
+  #- statsmodels #  provides classes and functions for the estimation of many different statistical models
+  #- pymc3 # for Bayesian statistical modeling and probabilistic machine learning
+  #- scipy # for scientific computing and technical computing
+  #- scikit-learn # tools for predictive data analysis
+  #
+  # ------------------------------------------------------------------DEEP LEARNING
+  #- jax # Composable transformations of Python+NumPy programs
+  #- tensorflow # An Open Source Machine Learning Framework for Everyone
+  #- pytorch # Tensors and Dynamic neural networks in Python with strong GPU acceleration
+  #- keras # Keras 3 is a full rewrite of Keras that enables you to run your Keras workflows on top of either JAX, TensorFlow, or PyTorch
+  #
+  # ------------------------------------------------------------------ML
+  #- transformers # pretrained models to perform tasks on different modalities (for Pytorch, TensorFlow, and JAX)
+  #- datasets # ready-to-use datasets for ML models
+  #
+  # ------------------------------------------------------------------LLMs
+  #- langchain # a framework for developing applications powered by language models
+  #- agent-framework # a framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.
   #
   # ------------------------------------------------------------------OTHER
   - ipython # a command shell for interactive computing
