@@ -11,6 +11,7 @@ dependencies:
   - pip
   - pip:
       - df2tables # Pandas or Polars DataFrames to Interactive DataTables
+      #- kreuzberg # Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats
 # ---------------------------------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------NOTEBOOKS
   #- jupyterlab # web-based interactive development environment for notebooks, code, and data
