@@ -27,6 +27,7 @@ dependencies:
   # ------------------------------------------------------------------EXCEL ENGINES
   - openpyxl > 3.1.1 # library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files
   - xlsxwriter # for writing files in the Excel 2007+ XLSX file format
+  - fastexcel # fast engine for Polars
   #- xlwings # makes it easy to call Python from Excel and vice versa
   #
   # ------------------------------------------------------------------SQL
