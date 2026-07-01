@@ -5,12 +5,12 @@ channels:
 dependencies:
   - python
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-# it will fail if behind company firewall, should install manually and use proxy
-# conda activate python_env
-# pip install --proxy http:[username:password]@proxy_ip_address:port <package_name>
-  - pip
-  - pip:
-      - df2tables # Pandas or Polars DataFrames to Interactive DataTables
+  # it will fail if behind company firewall, should install manually and use proxy
+  # conda activate python_env
+  # pip install --proxy http:[username:password]@proxy_ip_address:port <package_name>
+  - pip >= 26.1.2:
+      #- df2tables # Pandas or Polars DataFrames to Interactive DataTables
+      - mssql-python #
       #- kreuzberg # Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats
 # ---------------------------------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------NOTEBOOKS
@@ -20,7 +20,7 @@ dependencies:
   # ------------------------------------------------------------------DATA MANIPULATION
   - pandas # data analysis and manipulation tool, built on top of the Python programming language
   - polars # blazingly fast DataFrame library completely written in Rust
-  #- itables # changes how Pandas and Polars DataFrames are rendered in Python notebooks and applications
+  - itables # changes how Pandas and Polars DataFrames are rendered in Python notebooks and applications
   #- numpy # adding support for large, multi-dimensional arrays and matrices
   #- xarray # makes working with labelled multi-dimensional arrays in Python simple, efficient, and fun
   #
@@ -32,8 +32,10 @@ dependencies:
   #
   # ------------------------------------------------------------------SQL
   - connectorx # load data from databases into Python
-  - pymysql # MySQL client library
-  - psycopg2 # PostgreSQL database adapter
+  #- pymysql # MySQL client library
+  #- psycopg2 # PostgreSQL database adapter
+  #- adbc-driver-manager # A set of abstract APIs in different languages for working with databases and Arrow data
+  #- sqlalchemy # Python SQL toolkit and Object Relational Mapper
   #
   # ------------------------------------------------------------------WEB SCRAPING
   #- requests # allows to send HTTP/1.1 requests
