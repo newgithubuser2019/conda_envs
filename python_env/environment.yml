@@ -10,7 +10,7 @@ dependencies:
   # pip install --proxy http:[username:password]@proxy_ip_address:port <package_name>
   - pip >= 26.1.2:
       #- df2tables # Pandas or Polars DataFrames to Interactive DataTables
-      - mssql-python #
+      - mssql-python # Python driver for Microsoft SQL Server and the Azure SQL family of databases
       #- kreuzberg # Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats
 # ---------------------------------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------NOTEBOOKS
