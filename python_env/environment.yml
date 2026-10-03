@@ -2,16 +2,17 @@ name: python_env
 channels:
   - conda-forge
   - defaults
+  - conda-pypi
 dependencies:
   - python
 # ---------------------------------------------------------------------------------------------------------------------------------------------
   # it will fail if behind company firewall, should install manually and use proxy
   # conda activate python_env
   # pip install --proxy http:[username:password]@proxy_ip_address:port <package_name>
-  - pip >= 26.1.2:
-      #- df2tables # Pandas or Polars DataFrames to Interactive DataTables
-      - mssql-python # Python driver for Microsoft SQL Server and the Azure SQL family of databases
-      #- kreuzberg # Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats
+  - pip >= 26.2.1:
+    #- df2tables # Pandas or Polars DataFrames to Interactive DataTables
+    - mssql-python # Python driver for Microsoft SQL Server and the Azure SQL family of databases
+    #- kreuzberg # Extract text, metadata, images, and structured information from PDFs, Office documents, images, and 97+ formats
 # ---------------------------------------------------------------------------------------------------------------------------------------------
   # ------------------------------------------------------------------NOTEBOOKS
   #- jupyterlab # web-based interactive development environment for notebooks, code, and data
